@@ -10,9 +10,9 @@ Run the following commands in the project directory:
 
 
 
-    make clean
+        make clean
 
-    make
+        make
 
     
 
@@ -27,6 +27,7 @@ Note: This requires the CUDA toolkit (nvcc) to be loaded on the system (e.g., mo
 Next run the following command with the desired simulation parameters.
 
 For the GPU version:
+
 
         ./nbodygpu <input> <dt> <nbstep> <printevery> <blocksize>
 
@@ -64,7 +65,7 @@ To remove the compiled executable run the following command:
 
 
 
-    make clean
+        make clean
 
 
 
@@ -74,11 +75,12 @@ When Benchmarking on Centaurus:
 
 
 
-    cd nbodygpu
+        cd nbodygpu
 
-    chmod +x queue_main.sh
+        chmod +x queue_main.sh
 
-    sbatch queue_main.sh
+        sbatch queue_main.sh
+    
     
 This executes the batch script, which will compile the code and run the benchmarks defined in queue_main.sh.
 
