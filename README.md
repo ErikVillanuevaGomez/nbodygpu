@@ -8,11 +8,9 @@
 
 Run the following commands in the project directory:
 
-
-
-        make clean
-
-        make
+        make clean
+        
+        make
 
     
 
@@ -63,25 +61,21 @@ For example, to run the solar system simulation on the GPU with a block size of 
 
 To remove the compiled executable run the following command:
 
-
-
-        make clean
-
+            make clean
+            
 
 
 # BenchMark
 
 When Benchmarking on Centaurus:
 
+            cd nbodygpu
+            
+            chmod +x queue_main.sh
+            
+            sbatch queue_main.sh
 
 
-        cd nbodygpu
-
-        chmod +x queue_main.sh
-
-        sbatch queue_main.sh
-    
-    
 This executes the batch script, which will compile the code and run the benchmarks defined in queue_main.sh.
 
 It creates the file results.txt, which will contain the output and runtimes comparing the CPU and GPU implementations across different particle counts (1000, 10000, 100000).
