@@ -1,0 +1,38 @@
+N-Body Simulation Benchmark Results (CPU vs GPU)
+------------------------------------------------
+--- Testing with N=1000 particles (10 steps) ---
+CPU (N=1000):
+
+real	0m0.095s
+user	0m0.091s
+sys	0m0.002s
+GPU (N=1000):
+
+real	0m0.201s
+user	0m0.038s
+sys	0m0.152s
+
+--- Testing with N=10000 particles (10 steps) ---
+CPU (N=10000):
+
+real	0m8.689s
+user	0m8.665s
+sys	0m0.002s
+GPU (N=10000):
+
+real	0m0.531s
+user	0m0.360s
+sys	0m0.153s
+
+--- Testing with N=100000 particles (10 steps) ---
+CPU (N=100000):
+
+real	14m48.643s
+user	14m45.458s
+sys	0m0.033s
+GPU (N=100000):
+
+real	0m27.865s
+user	0m27.609s
+sys	0m0.162s
+
